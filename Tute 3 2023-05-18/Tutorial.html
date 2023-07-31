@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-03</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #32cd32; /* Green */
+            color: white;
+        }
+        td {
+            background-color: #f0e68c; /* Yellow */
+            color: #333; /* Dark gray */
+        }
+        .highlight-red {
+            color: red;
+        }
+        .highlight-blue {
+            color: blue;
+        }
+        .highlight-green {
+            color: green;
+        }
+        .highlight-steel-blue {
+            background-color: #4682b4; /* Steel Blue */
+            color: #ff6347; /* Tomato */
+            text-align: center;
+        }
+        .highlight-gold {
+            background-color: #ffd700; /* Gold */
+        }
+        .highlight-white {
+            background-color: #fff; /* White */
+        }
+        .highlight-orange {
+            background-color: #ffa500; /* Orange */
+            color: #fff; /* White */
+        }
+        a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Amal</td>
+            <td>Fernando</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>Sahan</td>
+            <td>Bandara</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Kamal</td>
+            <td>Perera</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>Nimal</td>
+            <td>Rathnayake</td>
+            <td>36</td>
+        </tr>
+    </table>
+    <br>
+    <table border="2">
+        <tr>
+            <td>America</td>
+            <td>Canada</td>
+            <td>Alaska</td>
+        </tr>
+        <tr>
+            <td class="highlight-red" colspan="2">Mexico</td>
+            <td class="highlight-green" rowspan="2">Jamaica</td>
+        </tr>
+        <tr>
+            <td class="highlight-blue">California</td>
+            <td class="highlight-green">Brazil</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="highlight-gold" border="2">
+        <tr class="highlight-white">
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Maths</td>
+            <td>Geography</td>
+            <td rowspan="3">Literature</td>
+            <td>Maths</td>
+            <td>Drama</td>
+        </tr>
+        <tr>
+            <td>IT</td>
+            <td>English</td>
+            <td>Dancing</td>
+        </tr>
+        <tr>
+            <td>Sinhala</td>
+            <td rowspan="2">Health</td>
+            <td rowspan="2">Music</td>
+            <td rowspan="2">Religion</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>IT Lab</td>
+        </tr>
+        <tr>
+            <td class="highlight-steel-blue" colspan="5">Interval</td>
+        </tr>
+        <tr>
+            <td>Religion</td>
+            <td>Maths</td>
+            <td>Health</td>
+            <td>Tamil</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td rowspan="2">History</td>
+            <td rowspan="3">Drama</td>
+            <td rowspan="2">Library</td>
+            <td>IT Lab</td>
+            <td>Tamil</td>
+        </tr>
+        <tr>
+            <td>Sinhala</td>
+            <td rowspan="2" class="highlight-orange">Art</td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>Maths</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <td class="highlight-orange" colspan="5">For more details:<a href="www.schoolnet.com/">www.schoolnet.com/</a></td>
+        </tr>
+    </table>
+</body>
+</html>

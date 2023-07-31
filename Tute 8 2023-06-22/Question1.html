@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: white;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+      }
+
+      button[data-color='red'] {
+        background-color: red;
+        color: white;
+      }
+
+      button[data-color='green'] {
+        background-color: green;
+        color: white;
+      }
+
+      button[data-color='blue'] {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button data-color="red" onmouseover="changeColor('red')" onmouseout="revertColor()">
+        Red
+      </button>
+      <button data-color="green" onmouseover="changeColor('green')" onmouseout="revertColor()">
+        Green
+      </button>
+      <button data-color="blue" onmouseover="changeColor('blue')" onmouseout="revertColor()">
+        Blue
+      </button>
+    </div>
+
+    <script>
+      function changeColor(color) {
+        document.body.style.backgroundColor = color;
+      }
+
+      function revertColor() {
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question2</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #357ae8;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="googleButton" onclick="redirectToGoogle()">Google</button>
+
+    <script>
+      function redirectToGoogle() {
+        // Show a confirm dialog
+        const result = confirm("Do you want to visit Google?");
+
+        // Check the user's choice
+        if (result) {
+          // If 'OK' is selected, redirect to Google
+          window.location.href = "https://www.google.com";
+        } else {
+          // If 'Cancel' is selected, display a message
+          alert("You decided to stay.");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+</body>
+</html>
